@@ -7,6 +7,27 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="gallery">
+		<h1 class="gallery-title">Галерея животных</h1>
+<!-- форма для выбора животных -->
+		<div class="gallery-form"> 
+			<label class="gallery-form__label" for="gallery-select_animals">Каких животных больше любите?</label>
+			<select class="gallery-form__select" id="gallery-select_animals">
+				<option value="dogs">Собак</option>
+				<option value="cats">Кошек</option>
+			</select>
+
+            <!-- кнопка для подтверждения выбора -->
+			<button class="gallery-form__button" id="gallery-button_load-img" type="button">Загрузить картинки</button>
+		</div>
+
+        <!-- лоадер, крутится и показывает что картинки загружаются -->
+		<div class="gallery-loader none" id="gallery-loader"></div>
+
+        <!-- выбранная галерея и набор картинок -->
+		<div class="gallery-img" id="gallery-img"></div>
+
+	</div>
     <script src="script.js"></script>
 </body>
 </html>
